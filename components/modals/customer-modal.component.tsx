@@ -1,6 +1,5 @@
 import { useFormik } from "formik";
-// import { mongooseConnect } from "@db/mongoose";
-// import { Customer } from "@models/customer.model";
+import { addNewCustomer } from "@lib/actions/customer.actions";
 import { Icon } from "@components/global/icon.component";
 import CustomInput from "../forms/custom-input.component";
 // import CustomSelect from "../forms/custom-select.component";
@@ -11,9 +10,11 @@ export default function CustomerModal({
   toggleCustomerModal: React.MouseEventHandler<HTMLSpanElement>;
 }) {
   const formik = useFormik({
-    initialValues: {},
-    onSubmit: (values) => {
-      console.log(values);
+    initialValues: {
+      firstName: "",
+    },
+    onSubmit: async (values) => {
+      await addNewCustomer(values, "/customers");
     },
   });
 

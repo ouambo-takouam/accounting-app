@@ -7,15 +7,14 @@ import { Icon } from "../global/icon.component";
 import NavigationItem from "./navigation-item.component";
 import { getNavigationPathData } from "@lib/utils";
 
+type Item = { path: string; slug: string };
+type BigItem = { subtitle: string; items: Array<Item> };
+
 export default function SideNavigation() {
   const [active, setActive] = useState(false);
 
   const currentPath = usePathname();
   const navigationData = getNavigationPathData(currentPath);
-
-  /** Some types defined */
-  type Item = { path: string; slug: string };
-  type BigItem = { subtitle: string; items: Array<Item> };
 
   useEffect(() => {
     if (navigationData) {

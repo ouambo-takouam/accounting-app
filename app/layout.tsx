@@ -5,7 +5,7 @@ import { Nunito } from "next/font/google";
 const nunito = Nunito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Accounting App 2.0",
+  title: "Accounting App",
   description: "Built by VIDEODECOMPTA",
 };
 
