@@ -1,0 +1,43 @@
+{
+  "/business-overview": {
+    "title": "Mon entreprise",
+    "items": [
+      { "slug": "Mon entreprise", "path": "/business-overview" },
+      { "slug": "Trésorerie", "path": "/cashflow-global-overview" },
+      { "slug": "Rapports", "path": "/reports" }
+    ]
+  },
+  "/banking": {
+    "title": "Ma gestion comptable",
+    "data": [
+      {
+        "subtitle": "GESTION",
+        "items": [
+          { "slug": "Règles bancaires", "path": "/olbrules" },
+          { "slug": "Plan comptable", "path": "/chartofaccounts" },
+          { "slug": "Tags", "path": "/tags" }
+        ]
+      },
+      {
+        "subtitle": "EXPERTS",
+        "items": [{ "slug": "Rapprochement bancaire", "path": "/reconcile" }]
+      }
+    ]
+  },
+  "/customers": {
+    "title": "Ma gestion commerciale",
+    "data": [
+      {
+        "subtitle": "VENTES",
+        "items": [
+          { "slug": "Clients", "path": "/customers" },
+          { "slug": "Produits et services", "path": "/items" }
+        ]
+      },
+      {
+        "subtitle": "DÉPENSES",
+        "items": [{ "slug": "Fournisseurs", "path": "/vendors" }]
+      }
+    ]
+  }
+}
